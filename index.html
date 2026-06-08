@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0A0A0B" />
+  <title>Arc Code — The CLI That Thinks</title>
+  <meta name="description" content="Arc Code is a free, powerful CLI powered by Arc Ultra. 242K context, always-on reasoning, zero API key. Outperforms GPT-5.2, GPT-5.1, and Claude Sonnet on coding. Built by Aarav Labs." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Arc Code — The CLI That Thinks" />
+  <meta property="og:description" content="Free. Powerful. A frontier CLI for developers — outbenchmarks GPT-5.2, GPT-5.1, and Claude Sonnet." />
+  <meta property="og:url" content="https://arccode.dev" />
+  <meta property="og:image" content="/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Arc Code — The CLI That Thinks" />
+  <meta name="twitter:description" content="Free. Powerful. A frontier CLI for developers — outbenchmarks GPT-5.2, GPT-5.1, and Claude Sonnet." />
+
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <header class="site-nav">
+    <div class="nav-inner">
+      <a href="#" class="logo" aria-label="Arc Code home">
+        <span class="logo-mark">Arc</span><span class="logo-cursor" aria-hidden="true"></span><span class="logo-sub">Aarav Labs</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#features">Features</a>
+        <a href="#benchmarks">Benchmarks</a>
+        <a href="#about">About</a>
+      </nav>
+      <a href="#install" class="btn btn-primary btn-sm nav-cta">Install Now</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <span class="eyebrow">ARC ULTRA · NOW AVAILABLE</span>
+            <h1 class="headline">The CLI That <span class="accent">Thinks</span><span class="cursor" aria-hidden="true"></span></h1>
+            <p class="subhead">Free. Powerful. A frontier model in your terminal — outbenchmarks GPT-5.2, GPT-5.1, and Claude Sonnet.</p>
+            <div class="hero-actions">
+              <a href="#install" class="btn btn-primary">
+                <span>$</span> Install Now
+              </a>
+              <a href="#benchmarks" class="btn btn-ghost">View Benchmarks →</a>
+            </div>
+          </div>
+
+          <div class="terminal" aria-label="Arc Code demo terminal">
+            <div class="terminal-chrome">
+              <span class="terminal-dot red"></span>
+              <span class="terminal-dot yellow"></span>
+              <span class="terminal-dot green"></span>
+              <span class="terminal-title" id="terminalTitle">~/projects/arc-demo — arc</span>
+            </div>
+            <div class="terminal-body" id="terminalBody"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="install" class="install">
+      <div class="container">
+        <span class="section-eyebrow">// GET STARTED</span>
+        <h2 class="section-title">Install in 30 seconds.</h2>
+        <p class="section-sub" style="margin: 0 auto;">One command. No API key. No subscription.</p>
+
+        <div class="install-card">
+          <div class="install-grid">
+            <div class="install-row">
+              <span class="install-badge">macOS</span>
+              <div class="code-block install-code">
+                <span class="code"><span class="prompt">$</span>curl -fsSL https://github.com/artsblr-bot/arc-code/releases/download/v0.1.0/install.sh | bash</span>
+                <button class="copy-btn" data-copy="curl -fsSL https://github.com/artsblr-bot/arc-code/releases/download/v0.1.0/install.sh | bash" aria-label="Copy macOS command">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                  <span>Copy</span>
+                </button>
+              </div>
+            </div>
+            <div class="install-row">
+              <span class="install-badge">Linux</span>
+              <div class="code-block install-code">
+                <span class="code"><span class="prompt">$</span>curl -fsSL https://github.com/artsblr-bot/arc-code/releases/download/v0.1.0/install.sh | bash</span>
+                <button class="copy-btn" data-copy="curl -fsSL https://github.com/artsblr-bot/arc-code/releases/download/v0.1.0/install.sh | bash" aria-label="Copy Linux command">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                  <span>Copy</span>
+                </button>
+              </div>
+            </div>
+            <div class="install-row">
+              <span class="install-badge">Win</span>
+              <div class="code-block install-code">
+                <span class="code"><span class="prompt">PS&gt;</span>iwr -useb https://github.com/artsblr-bot/arc-code/releases/download/v0.1.0/install.ps1 | iex</span>
+                <button class="copy-btn" data-copy="iwr -useb https://github.com/artsblr-bot/arc-code/releases/download/v0.1.0/install.ps1 | iex" aria-label="Copy Windows command">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                  <span>Copy</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="container">
+        <div style="text-align: center;">
+          <span class="section-eyebrow">// FEATURES</span>
+          <h2 class="section-title">Built different. By design.</h2>
+          <p class="section-sub" style="margin: 0 auto;">A frontier model, distilled into one sharp tool.</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="card card-hover">
+            <div class="feature-icon">▤</div>
+            <h3 class="feature-title">242K Context Window</h3>
+            <p class="feature-desc">Holds your entire codebase in memory. Stop summarizing — start reasoning over the full picture.</p>
+          </div>
+          <div class="card card-hover">
+            <div class="feature-icon">⚡</div>
+            <h3 class="feature-title">Always-On Reasoning</h3>
+            <p class="feature-desc">Thinks before it acts, visibly. Watch the plan, approve the change, ship with confidence.</p>
+          </div>
+          <div class="card card-hover">
+            <div class="feature-icon">∞</div>
+            <h3 class="feature-title">Completely Free</h3>
+            <p class="feature-desc">No API key. No subscription. No usage limits. Just a frontier model, ready when you are.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="benchmarks">
+      <div class="container">
+        <div class="bench-head">
+          <div>
+            <span class="section-eyebrow">// BENCHMARKS</span>
+            <h2 class="section-title">Numbers don't lie.</h2>
+            <p class="section-sub">Measured against leading frontier models on real coding tasks.</p>
+          </div>
+        </div>
+
+        <div class="bench-stats">
+          <div class="card stat">
+            <span class="stat-value">+27<span class="unit">%</span></span>
+            <span class="stat-label">Terminal command success</span>
+          </div>
+          <div class="card stat">
+            <span class="stat-value">+6<span class="unit">%</span></span>
+            <span class="stat-label">vs GPT-5.2 on coding</span>
+          </div>
+          <div class="card stat">
+            <span class="stat-value">+10<span class="unit">%</span></span>
+            <span class="stat-label">vs GPT-5.1 on coding</span>
+          </div>
+          <div class="card stat">
+            <span class="stat-value">+13<span class="unit">%</span></span>
+            <span class="stat-label">vs Claude Sonnet on coding</span>
+          </div>
+        </div>
+
+        <div class="bench-chart-card">
+          <div class="bench-chart-title">// Terminal command completion rate</div>
+          <div class="bar-chart">
+            <div class="bar-row">
+              <span class="bar-name">Arc Ultra</span>
+              <div class="bar-track"><div class="bar-fill" style="width: 96%"></div></div>
+              <span class="bar-value">96%</span>
+            </div>
+            <div class="bar-row">
+              <span class="bar-name">GPT-5.2</span>
+              <div class="bar-track"><div class="bar-fill" style="width: 90%"></div></div>
+              <span class="bar-value">90%</span>
+            </div>
+            <div class="bar-row">
+              <span class="bar-name">GPT-5.1</span>
+              <div class="bar-track"><div class="bar-fill" style="width: 86%"></div></div>
+              <span class="bar-value">86%</span>
+            </div>
+            <div class="bar-row">
+              <span class="bar-name">Claude Sonnet</span>
+              <div class="bar-track"><div class="bar-fill" style="width: 83%"></div></div>
+              <span class="bar-value">83%</span>
+            </div>
+            <div class="bar-row">
+              <span class="bar-name">Gemini 2.5 Pro</span>
+              <div class="bar-track"><div class="bar-fill" style="width: 81%"></div></div>
+              <span class="bar-value">81%</span>
+            </div>
+          </div>
+          <p class="bench-disclaimer">Benchmarks by Aarav Labs internal evaluation, June 2026. n=500 tasks per model.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="arch">
+      <div class="container">
+        <div class="arch-head">
+          <span class="section-eyebrow">// ARCHITECTURE</span>
+          <h2 class="section-title">Four models. One lineage.</h2>
+          <p class="arch-tag">400B parameter <span class="accent">Mixture-of-Experts</span> model</p>
+        </div>
+
+        <div class="lineage">
+          <span class="lineage-node">Flash</span>
+          <span class="lineage-arrow">→</span>
+          <span class="lineage-node">1.7 Pro</span>
+          <span class="lineage-arrow">→</span>
+          <span class="lineage-node">2.3 Beta</span>
+          <span class="lineage-arrow">→</span>
+          <span class="lineage-node current">Ultra</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <strong>© 2026 Aarav Labs</strong>
+        <span class="tagline">Building tools that think.</span>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/" target="_blank" rel="noopener">github</a>
+        <a href="https://twitter.com/" target="_blank" rel="noopener">twitter</a>
+        <a href="https://arc-mobile-seven.vercel.app" target="_blank" rel="noopener">arc-mobile</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/terminal.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
